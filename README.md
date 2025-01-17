@@ -76,4 +76,4 @@ Distributed under the MIT License. See `LICENSE` file for more information.
 ## 👥 Contact
 
 
-Project Link: [https://github.com/yourusername/led-pattern-gen](https://github.com/yourusername/led-pattern-gen)
+Project Link: [https://github.com/DanDon01/led-pattern-gen](https://github.com/DanDon01/led-pattern-gen)
