@@ -1,0 +1,12 @@
+# Ignore pattern.json
+pattern.json
+
+# Ignore other common files
+*.log
+*.pyc
+__pycache__/
+.env
+.DS_Store
+node_modules/
+dist/
+build/
