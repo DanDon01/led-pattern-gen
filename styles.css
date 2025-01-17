@@ -1,0 +1,145 @@
+:root {
+    --primary-color: #2196F3;
+    --secondary-color: #1976D2;
+    --background-color: #1E1E1E;
+    --control-bg: #2D2D2D;
+    --text-color: #FFFFFF;
+    --active-color: #FF5722; /* Add this line for active button color */
+    --feedback-bg: rgba(0, 0, 0, 0.7);
+    --feedback-text: #FFFFFF;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    max-width: 1600px; /* Increase max-width to accommodate larger canvas */
+    margin: 0 auto;
+}
+
+#ledCanvas {
+    background-color: var(--control-bg);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.controls {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.control-group {
+    background-color: var(--control-bg);
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
+
+button.active {
+    background-color: var(--active-color); /* Add this line for active button color */
+}
+
+.color-palette {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 5px;
+    padding: 10px;
+    background-color: var(--control-bg);
+    border-radius: 8px;
+    position: fixed;
+    z-index: 1000;
+}
+
+.color-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.color-button:hover {
+    transform: scale(1.1);
+}
+
+.color-button.selected {
+    border-color: white;
+}
+
+.speed-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type="range"] {
+    flex: 1;
+    accent-color: var(--primary-color);
+}
+
+.pattern-presets {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: var(--control-bg);
+    border-radius: 8px;
+}
+
+.preset-pattern {
+    display: flex;
+    gap: 2px;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+.preset-led {
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+}
+
+#feedback {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--feedback-bg);
+    color: var(--feedback-text);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    z-index: 1001; /* Ensure it stays above other elements */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    display: none; /* Hide feedback message by default */
+}

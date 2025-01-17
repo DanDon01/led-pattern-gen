@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LED Pattern Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .container {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            position: relative;
+            /* ...existing code... */
+        }
+        .controls {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .color-palette {
+            position: absolute;
+        }
+        .pattern-controls button {
+            margin: 5px;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <canvas id="ledCanvas"></canvas>
+        <div class="controls">
+            <div class="control-group">
+                <button id="savePattern">Save Pattern</button>
+                <button id="loadPattern">Load Pattern</button>
+                <button id="deselectBrush">Deselect Brush</button>
+            </div>
+            <div class="control-group">
+                <button id="prevStep">Previous Step</button>
+                <button id="nextStep">Next Step</button>
+                <span id="stepLabel">Step: 1</span>
+                <button id="clearStep">Clear Step</button>
+                <button id="resetAll">Reset All</button>
+                <button id="rotateLeft">⟲</button>
+                <button id="rotateRight">⟳</button>
+            </div>
+            <div class="control-group">
+                <button id="previewPattern">Preview Pattern</button>
+                <div class="speed-control">
+                    <label for="speedSlider">Preview Speed:</label>
+                    <input type="range" id="speedSlider" min="1" max="10" value="5">
+                </div>
+            </div>
+            <div class="control-group">
+                <button id="gradientMode">Gradient Mode</button>
+                <button id="mirrorPattern">Mirror Pattern</button>
+                <!-- Added 'Flip Pattern' button next to 'Mirror Pattern' -->
+                <button id="flipPattern">Flip Pattern</button>
+            </div>
+            <div class="quick-tools">
+                <button id="fillCorners">Fill Corners</button>
+                <button id="fillSides">Fill Sides</button>
+                <button id="alternateLeds">Alternate LEDs</button>
+            </div>
+            <div id="colorPalette" class="color-palette"></div>
+            <div id="patternPresets" class="pattern-presets"></div>
+            <div class="pattern-controls" id="patternControls">
+                <button id="playBtn">Play</button>
+                <button id="clearBtn">Clear</button>
+                <button id="rotateBtn">Rotate</button>
+                <button id="saveBtn">Save Step</button>
+            </div>
+        </div>
+    </div>
+    <div id="feedback" style="position: fixed; bottom: 10px; left: 50%; transform: translateX(-50%);
+        background-color: rgba(0, 0, 0, 0.7); color: white; padding: 10px 20px; border-radius: 5px;
+        font-family: Arial, sans-serif; font-size: 14px;">
+        <!-- ...existing code... -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
