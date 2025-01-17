@@ -1,8 +1,8 @@
 # led-pattern-gen
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![GitHub issues](https://img.shields.io/github/issues/yourusername/led-pattern-gen)](https://github.com/yourusername/led-pattern-gen/issues)
-[![GitHub stars](https://img.shields.io/github/stars/yourusername/led-pattern-gen)](https://github.com/yourusername/led-pattern-gen/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/DanDon01/led-pattern-gen)](https://github.com/DanDon01/led-pattern-gen/issues)
+[![GitHub stars](https://img.shields.io/github/stars/DanDon01/led-pattern-gen)](https://github.com/DanDon01/led-pattern-gen/stargazers)
 
 An intuitive LED pattern generator that allows you to create, preview, and export custom animations for LED strips.
 
