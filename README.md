@@ -74,6 +74,6 @@ Contributions are always welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for way
 Distributed under the MIT License. See `LICENSE` file for more information.
 
 ## 👥 Contact
-Your Name - [@yourtwitter](https://twitter.com/yourtwitter)
+
 
 Project Link: [https://github.com/yourusername/led-pattern-gen](https://github.com/yourusername/led-pattern-gen)
